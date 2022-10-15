@@ -2,3 +2,9 @@
   max-width: 484px;
   color: #ffffff;
 }
+
+@media screen and (max-width: 639px) {
+  .place__paragraph {
+    padding: 0 calc(16px - 8 * ((100vw - 288px) / (639 - 288))) 0;
+  }
+}

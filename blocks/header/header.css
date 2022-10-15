@@ -4,34 +4,18 @@
   align-items: flex-end;
   justify-content: space-between;
   margin: 0 auto 56px;
-}
-
-@media screen and (max-width: 1024px) {
-  .header {
-    max-width: 928px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin: 0 auto 48px;
-  }
+  padding: 28px 48px 0;
 }
 
 @media screen and (max-width: 768px) {
   .header {
-    max-width: 720px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin: 0 auto 48px;
+    padding: calc(16px + 12 * ((100vw - 320px) / (768 - 320)))
+      calc(16px + 32 * ((100vw - 320px) / (768 - 320))) 0;
   }
 }
 
 @media screen and (max-width: 320px) {
   .header {
-    max-width: 288px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin: 0 auto 48px;
+    padding: 16px 16px 0;
   }
 }

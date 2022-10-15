@@ -1,33 +1,26 @@
 .place__title {
-  max-width: 460px;
-  font-family: "Inter", "Arial", sans-serif;
-  font-style: normal;
   font-size: 72px;
   font-weight: 900;
   line-height: 76px;
   margin: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .place__title {
-    max-width: 340px;
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
-    font-size: 42px;
-    font-weight: 900;
-    line-height: 46px;
-    margin: 0;
+    font-size: calc(32px + 40 * ((100vw - 320px) / (1024 - 320)));
+    line-height: calc(35px + 41 * ((100vw - 320px) / (1024 - 320)));
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .place__title {
+    padding: 0 calc(16px - 8 * ((100vw - 288px) / (639 - 288))) 0;
   }
 }
 
 @media screen and (max-width: 320px) {
   .place__title {
-    display: block;
-    max-width: 288px;
-    font-family: "Inter", "Arial", sans-serif;
-    font-style: normal;
     font-size: 32px;
-    font-weight: 900;
     line-height: 35px;
   }
 }
