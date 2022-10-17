@@ -38,3 +38,9 @@
     min-height: calc(100vw * 740 / 1280);
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .cover__overlay {
+    min-height: calc(100vw * 640 / 1024);
+  }
+}

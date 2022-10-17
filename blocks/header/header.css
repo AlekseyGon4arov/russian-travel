@@ -7,10 +7,17 @@
   padding: 28px 48px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .header {
+    margin: 0 auto 48px;
+    padding: 28px calc(24px + 24 * ((100vw - 768px) / (1024 - 768))) 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header {
     padding: calc(16px + 12 * ((100vw - 320px) / (768 - 320)))
-      calc(16px + 32 * ((100vw - 320px) / (768 - 320))) 0;
+      calc(16px + 8 * ((100vw - 320px) / (768 - 320))) 0;
   }
 }
 

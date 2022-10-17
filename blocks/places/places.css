@@ -20,3 +20,9 @@
     max-width: calc(288px + (720 - 288) * ((100vw - 288px) / (768 - 288)));
   }
 }
+
+@media screen and (max-width: 320px) {
+  .places {
+    margin: 0 auto 66px;
+  }
+}

@@ -15,3 +15,11 @@
     line-height: calc(16px + 6 * ((100vw - 320px) / (768 - 320)));
   }
 }
+
+@media screen and (max-width: 320px) {
+  .cover__subtitle {
+    max-width: 267px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
