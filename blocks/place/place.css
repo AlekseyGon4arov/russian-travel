@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(min-content, 460px) minmax(min-content, 484px)
+    minmax(440px, 460px) minmax(452px, 484px)
   );
   gap: 48px 40px;
   margin-bottom: 80px;
@@ -16,8 +16,8 @@
 @media screen and (max-width: 1024px) {
   .place {
     grid-template-columns: repeat(
-      auto-fill,
-      minmax(min-content, 440px) minmax(min-content, 456px)
+      auto-fit,
+      minmax(340px, 440px) minmax(352px, 456px)
     );
     gap: 48px 30px;
   }
@@ -25,21 +25,17 @@
 
 @media screen and (max-width: 768px) {
   .place {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(min-content, 340px) minmax(min-content, 352px)
-    );
     gap: 48px 28px;
+    margin-bottom: 73px;
+  }
+
+@media screen and (max-width: 767px) {
+  .place {
+    grid-template-columns: 1fr;
   }
 
   .place:last-child {
     margin-bottom: 90px;
-  }
-}
-
-@media screen and (max-width: 626px) {
-  .place {
-    grid-template-columns: repeat(auto-fit, minmax(320px, max-content));
   }
 }
 
